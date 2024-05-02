@@ -11,21 +11,21 @@
     <!--calcolo del prezzo del biglietto-->
         <div class="container">
             <h1 class="text-white text-center"><strong>CALCOLA IL PREZZO DEL TUO BIGLIETTO</strong></h1>
-                <div class="bg-white">
-                    <form action="">
-                        <div class="d-flex justify-content-center align-content-around text-center p-5">              
+                <div id="annullare" class="bg-white">
+                    
+                        <div  class="d-flex justify-content-center align-content-around text-center p-5">              
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label fs-5 mb-4">Nome Cognome</label>
-                                <input type="name" class="form-control" id="exampleFormControlInput1">
+                                <label class="form-label fs-5 mb-4">Nome Cognome</label>
+                                <input type="name" class="form-control" value="">
                             </div>
                 
                             <div class="mb-3 mx-5">
-                                <label for="exampleFormControlInput1" class="form-label fs-5 mb-4">Km de percorrere</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <label class="form-label fs-5 mb-4">Km de percorrere</label>
+                                <input type="number" class="form-control" value="">
                             </div>
 
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label fs-5 mb-4">
+                                <label class="form-label fs-5 mb-4">
                                     Fascia d'età
                                 </label>
                                     <select class="form-select" id="inputGroupSelect01">
@@ -37,8 +37,8 @@
                             </div>    
                         </div>
                         <div class="d-flex justify-content-center align-content-around text-center pb-4">              
-                            <button type="submit" class="btn btn-primary mx-2">Genera</button>
-                            <button type="submit" class="btn btn-primary mx-2">Annulla</button>
+                            <button type="submit" id="invio" class="btn btn-primary mx-2">Genera</button>
+                            <button type="submit" id="reset" class="btn btn-primary mx-2">Annulla</button>
                         </div>
                     </form>
                 </div>
@@ -59,11 +59,11 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">Jon Snow</th>
-                            <td>Biglietto Standard</td>
+                            <th class="username" scope="row">Jon Snow</th>
+                            <td class="ticket-types">Biglietto Standard</td>
                             <td>5</td>
                             <td>92911</td>
-                            <td>2.10 &euro;</td>
+                            <td class="cost">2.10 &euro;</td>
                           </tr>
                         </tbody>
                       </table>
@@ -71,8 +71,6 @@
             </div>                       
         </div>
         
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
